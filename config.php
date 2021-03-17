@@ -1,14 +1,14 @@
-<?php   
-    
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$db = "galaxy";
 
+// Create connection
+$conn = new mysqli($servername, $username, $password, $db);
 
-    $db_user = "root";
-    $db_pass = "";
-    $db_name = "useraccounts";
-    
-    $db = new PDO('mysql:host=localhost;dbname=' . $db_name . ';charset=utf8', $db_user, $db_pass);
-    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-
-
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed!");
+}
 ?>

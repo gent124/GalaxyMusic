@@ -352,11 +352,6 @@ nav.main-menu {
 .menu-area-main li:focus a {
   color: #fff;
 }
-.menu-area-main li.active a {
-  color: #fff;
-  background: #000;
-  box-shadow: #9d9d9d66 0px 0px 56px 26px;
-}
 .right_cart_section {
   float: right;
   width: auto;
@@ -621,6 +616,16 @@ nav.main-menu {
 .header-search form .search-btn:hover {
   background: #111111;
 }
+
+.header{
+  background-color: #271527 !important;
+  height: 75px;
+  padding: 10px 0 !important;
+}
+
+.header .logo img {
+  height: 50px;
+}
 .cart-box {
   float: right;
   margin-left: 10px;
@@ -869,13 +874,13 @@ nav.main-menu {
   position: relative;
   border-bottom: solid #eee 1px;
 }
-.main-menu ul > li .sub-down li a::before {
-}
+.main-menu ul > li .sub-down li a::before
+
 .main-menu ul > li .sub-down li a:hover {
   color: #111111;
 }
-.main-menu ul > li .sub-down li a:hover::before {
-}
+.main-menu ul > li .sub-down li a:hover::before 
+
 .main-menu ul li:first-child {
   margin-left: 0;
 }
@@ -929,7 +934,7 @@ nav.main-menu {
   display: inline-block;
   vertical-align: middle;
 }
-.main-menu ul > li:nth-child (6) {
+.main-menu ul > li:nth-child(6) {
   padding-right: 0px;
 }
 .nav > li {
@@ -945,8 +950,7 @@ nav.main-menu {
   right: 0;
   padding: 15px 0px;
 }
-.sub-full {
-}
+
 .simple-down {
   padding: 15px;
 }
@@ -1907,11 +1911,19 @@ ul.contant_icon li img {
   font-weight: 500;
   text-align: center;
 }
-.box {
+
+.login-form {
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.box {
   width: 25rem;
   padding: 2.5rem;
   /*border-bottom: 0.065rem solid #fff;
@@ -1983,3 +1995,5 @@ ul.contant_icon li img {
 .box input[type="submit"]:hover {
   background-color: #1cb1f5;
 }
+
+
